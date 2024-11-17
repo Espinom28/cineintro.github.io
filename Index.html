@@ -1,0 +1,164 @@
+<html><!--inicio del codigo-->
+<head>
+	<title>BOLETOS</title>
+	
+	<!-- Diseño de la tabla -->
+	<style>
+		table, th, td {
+			border: 1px solid black
+		}
+	</style>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cine</title>
+</head>
+
+
+<body>
+	<!--titulo del trabajo-->
+	<h1>EL CINE</h1> 
+	<i>Proyecto final</i>
+	<h3>Integrantes del equipo</h3>
+	<ol>
+		<!--inserta el nombre de los integrantes del equipo-->
+		<lu><h5>Angeles Luna Gabriela</h5></lu>
+		<lu><h5>Espino Ramirez Magali</h5></lu>
+		<lu><h5>Figueroa Dominguez Sofia Abigail</h5></lu>
+		<lu><h5>Gutiérrez Arriaga Jessica Itziar</h5></lu>
+		<lu><h5>Rafael Campoy Laura</h5></lu>
+	</ol>
+
+	<!--coloca el primer parrafo de informacion-->
+    
+
+	 <h2>¿Que es el cine?</h2>
+	 <p>El cine es una técnica, una industria y una forma de arte que recrea la ilusión de movimiento a partir de la captura de fotografías continuas (fotogramas) reproducidas a tal velocidad que se perciben como un flujo continuo.</p>
+
+	 <!--agrega los demas parrafos de la informacion colocandole un numero-->
+
+
+	 <p id="02">La palabra cine es la forma abreviada de cinematografía, nombre formado por las voces griegas kiné (“movimiento”) y graphos (“escritura” o “inscripción”). Esta técnica, inventada en el siglo XIX, fue en sus inicios un paso adelante en la evolución de la fotografía. Sin embargo, a partir de 1895 pasó a ocupar un lugar propio entre las formas de espectáculo de la época.</p>
+
+	 <p id="03" >Al dedicarse a contar historias, la cinematografía comenzó a desarrollar un lenguaje propio y devino en un género artístico, que más tarde fue reconocido dentro de las bellas artes como el “séptimo arte”, junto con la arquitectura, la escultura, la pintura, la música, la literatura y las artes escénicas.
+
+	 <p id="04"> El cine es una de las industrias del entretenimiento más populares y consumidas del mundo entero,
+	  tanto en salas de cine como a través de la televisión o los servicios de streaming digital. Su evolución y 
+	sofisticación han llevado a Hollywood y otros grandes consorcios de producción fílmica a grabar enormes produccionescon equipos de profesionales especializados, en las que sin invierten grandes sumas en comercialización y publicidad, y que llegan a recaudar millones de dólares en taquilla.</p>
+
+	<p id="05">Dada su capacidad de narrar historias empleando ilusiones y efectos especiales, el cine es considerado una de las bellas artes: el séptimo arte. Por otro lado, a veces se lo considera como un punto de encuentro de las artes: la fotografía (cámara), la escritura literaria (guion), la música, etc.</p>
+
+	<p id="06">Por eso, el cine ha devenido hoy en día un asunto masivo. Aunque existen proyectos que se llevan a cabo con fondos limitados, habitualmente cada uno requiere grandes inversiones por parte de los centros cinematográficos como Hollywood en EEUU o Bollywood en India.</p>
+
+	<p id="07">Los hijos del fotógrafo francés Antoine Lumière, conocidos como los hermanos Lumière, inventaron el primer proyector cinematográfico a finales del siglo XIX. La primera presentación formal del cine en la historia tuvo lugar el 28 de diciembre de 1895 en París.</p>
+
+	<p id="08">Todas las primeras cintas cinematográficas eran tomas documentales. Por ejemplo, puede observarse un bebé almorzando, obreros derribando una pared, un tren arribando a la estación, entre otras.</p>
+ 
+ 	<!-- Creacion de la tabla y sus elementos -->
+<table>
+<tr>
+	<th>Boleto</th>
+	<th>Precio</th>
+	<th>Características</th>
+</tr>
+<tr>
+	<td>Normal</td>
+	<td>$70.00</td>
+	<td> <li>Pantallas estándar y sonido estéreo</li>
+		<li>El cliente busca sus snacks y bebidas</li>
+		<li>Asientos de tamaño estándar</li></td>
+</tr>
+<tr>
+	<td>VIP</td>
+	<td>$180.00</td>
+	<td><li>Pantallas de alta calidad y sonido envolvente</li>
+		<li>Servicio de alimentos y bebidas dentro de la sala</li>
+		<li>Asientos reclinables, con más espacio y comodidad</li>
+	</td>
+</tr>
+
+</table>
+
+<!-- Creación de formulario para cine -->
+    <h1>Reservar Entradas</h1>
+    <form id="formCine">
+        <label>  
+
+<!-- Agrega tù nombre -->
+ <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+<!-- Agregar un email y obligatoriamente agregar el “@“ -->
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+<!-- Indicar tu opción de película que deseas ver -->
+        <label for="pelicula">Película:</label><br>
+        <select id="pelicula" name="pelicula" required>
+            <option value="pelicula1">Bosque de Pesadillas</option>
+            <option value="pelicula2">2013</option>
+            <option value="pelicula3">Hormigaman</option>
+        </select><br><br>
+
+<!-- Indicar el número de entradas que deseas para la película -->
+        <label for="entradas">Cantidad de Entradas:</label><br>
+        <input type="number" id="entradas" name="entradas" min="1" required><br><br>
+
+<!-- Tipo de asiento -->
+        <label for="asiento">Tipo de Asiento:</label>
+        <select id="asiento" name="asiento" required>
+            <option value="general">Normal</option>
+            <option value="vip">VIP</option>
+        </select>
+<!-- Botón de Reservar -->
+        <input type="submit" value="Reservar">
+    </form>
+
+    <script>
+        document.getElementById('formCine').onsubmit = function(event) {
+           
+    </script>
+
+
+<!-- Imagen del póster -->
+<img src="imagen-poster.jpg" alt="Póster"
+style="width:90%; height:auto; margin:20px auto;
+border:2px solid #333; border-radius:20px;
+box-shadow: 0 0 20px rgba(0,0,0,0.8);">
+
+<!-- Imagen de la mascota del cine -->
+<img src="mascota-cine.png" alt="Mascota del cine" width="500" height="500">
+
+<!--Crea un reproductor de video mp4 con control de reproducción-->
+<video width="800" controls>
+  <source src="Vídeo.mp4" type="video/mp4">
+</video>
+
+<!-- Enlaces a sitios web -->
+   <div style="text-align:center; margin:40px auto;">
+     <h2>Enlaces rápidos</h2>
+<ul>
+  <li><a href="https://www.amazon.com" target="_blank">Amazon</a></li>
+  <li><a href="https://www.yahoo.com" target="_blank">Yahoo</a></li>
+  <li><a href="https://www.google.com" target="_blank">Google</a></li>
+</ul>
+</div>
+
+<!--Indica los nombres y el número telefónico en la sección de pie de página-->
+<footer>
+ <p> Nombres; </p>
+ <ol>
+		<!--inserta el nombre de los integrantes del equipo-->
+		<lu><h5>Angeles Luna Gabriela</h5></lu>
+		<lu><h5>Espino Ramirez Magali</h5></lu>
+		<lu><h5>Figueroa Dominguez Sofia Abigail</h5></lu>
+		<lu><h5>Gutiérrez Arriaga Jessica Itziar</h5></lu>
+		<lu><h5>Rafael Campoy Laura</h5></lu>
+	</ol>
+
+<!--inserta el número telefónico-->
+ <p> Nùmero telefónico; </p>
+ <tel> 5568934856 </tel>
+</footer>
+
+</body>
+</html>
